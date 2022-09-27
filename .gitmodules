@@ -1,0 +1,6 @@
+[submodule "memba-frontend"]
+	path = memba-frontend
+	url = git@github.com:ceghap/memba-frontend.git
+[submodule "memba-backend"]
+	path = memba-backend
+	url = git@github.com:ceghap/memba-backend.git

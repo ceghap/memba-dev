@@ -1,0 +1,5 @@
+node_modules/
+.idea/
+*.iml
+memba-frontend/
+memba-backend/
