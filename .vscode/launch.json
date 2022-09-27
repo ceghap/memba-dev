@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to memba-backend",
+      "port": 9229,
+      "request": "attach",
+      "type": "node",
+      "remoteRoot": "/usr/src/app",
+      "localRoot": "${workspaceFolder}/memba-backend",
+      "restart": true,
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js",
+        "${workspaceFolder}/memba-backend/node_modules/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
+    }
+  ]
+}
