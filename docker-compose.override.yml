@@ -1,0 +1,17 @@
+version: "3.8"
+# Volumes
+volumes:
+  yarn_cache:
+x-environment: &default-dev-environment
+  NODE_ENV: development
+# Services
+services:
+  memba-backend:
+    build:
+      context: ./memba-backend
+      target: base
+    environment:
+      <<: *default-dev-environment
+    volumes:
+      - ./memba-backend:/usr/src/app
+    command: ["yarn", "start:debug"]
